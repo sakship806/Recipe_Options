@@ -1,0 +1,91 @@
+/* Reset default margin and padding for the entire page */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #eef7d3; /* Set a light green background */
+}
+
+/* Style the header element with a light yellow background and black text */
+header {
+  background: #fff176; /* Use a lighter yellow background for the header */
+  color: #000; /* Set the text color to black */
+  padding: 20px;
+  text-align: center;
+}
+
+/* Style the main container with a white background, a box shadow, and rounded edges */
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 20px;
+  background-color: #fff; /* Use white for the container background */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px; /* Add rounded edges to the container */
+}
+
+/* Define styles for the recipe list */
+.recipe-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Style individual recipe items with flex layout, shadows, rounded edges, and hover effect */
+.recipe-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px; /* Add rounded edges to recipe items */
+  overflow: hidden;
+  background-color: #fff176; /* Lighter yellow recipe item background */
+  transition: transform 0.2s ease;
+}
+
+/* Apply a hover effect to recipe items on mouseover */
+.recipe-item:hover {
+  transform: translateY(-5px);
+}
+
+/* Style recipe images with a defined size, object-fit, and rounded edges */
+.recipe-item img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px 0 0 10px; /* Rounded edges for the image */
+}
+
+/* Style recipe titles with a specific font size, padding, and color */
+.recipe-item h2 {
+  margin: 0;
+  font-size: 20px;
+  padding: 10px;
+  color: #000; /* Set the recipe title color to black */
+}
+
+/* Style recipe descriptions with padding and a slightly darker color */
+.recipe-item p {
+  margin: 0;
+  padding: 10px;
+  color: #555; /* Use a slightly darker color for the description text */
+}
+
+/* Style the "View Recipe" link with a green background and white text */
+.recipe-item a {
+  background: #68d391; /* Green "View Recipe" button background */
+  color: #fff; /* Set the text color to white */
+  min-width: 150px;
+  padding: 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  transition: background 0.3s ease;
+  border-radius: 0 10px 10px 0; /* Rounded edges for the button */
+}
+
+/* Apply a darker green background to the button on hover */
+.recipe-item a:hover {
+  background: #5ebf85; /* Darker green on hover */
+}
